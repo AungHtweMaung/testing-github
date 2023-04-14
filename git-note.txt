@@ -1,0 +1,8 @@
+git stages အဆင့်တွေရှိမယ်
+------------ ------
+working copy => start stage 
+add => git add . လုပ်လိုက်ရင် staging area ရောက်သွားမယ်
+staging area
+commit => git commit -m "commit name" => commit လုပ်လိုက်ရင် head ထဲရောကါရင် push ဖို့ ready ဖြစ်သွားမယ် 
+head 
+push 
