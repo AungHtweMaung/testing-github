@@ -1,8 +1,30 @@
 git stages အဆင့်တွေရှိမယ်
 ------------ ------
-working copy => start stage 
+working copy => start stage => git init 
 add => git add . လုပ်လိုက်ရင် staging area ရောက်သွားမယ်
+    => staging area ထဲက ပြန်ဖြုတ်ချချင်ရင် git reset .
 staging area
 commit => git commit -m "commit name" => commit လုပ်လိုက်ရင် head ထဲရောကါရင် push ဖို့ ready ဖြစ်သွားမယ် 
 head 
-push 
+push -> git remote add origin git@github.com:AungHtweMaung/testing-github.git
+     -> remote ဆိုတာ online url ဖြစ်တဲ့ repo url ကို add လုပ်ပေးတာ
+     -> git push -u origin master
+     -> origin ဆိုတာ repo url name, master ဆိုတာ branch name 
+
+commit လုပ်ဖို့ ၃ ဆင့်ရှိမယ် 
+git init 
+modified => git add . 
+staging => git status နဲ့ခေါ်ကြည့်ရင် staging ထဲရောက်တာသိန်ုင်မယ်
+commit =>  git commit -m "commit name"
+
+github branch 
+-------------
+user1 ရေးတာ login feature, so login branch ခွဲရေးတယ်
+user2 ရေးတာ register feature, so register branch ခွဲရေးတယ် 
+နောက်ဆုံးမှာ  production level code တွေထားတဲ့ master branch မှာ  merge လုပ်တယ်။ 
+
+for eg; 
+pc1 - master -> everything is ok in production. 
+pc1 -> add email feature -> email feature ခွဲရေးဖို့ develop email branch ခွဲရေးတယ် 
+    -> နောက်ဆုံးရေးပြီးရင် merge လုပ်တယ် => email ရေးလို့ error တွေဖြစ်ရင် email branch ကို ဖျက်ချလိုက်လည်း production code တွေက ဘာမှမဖြစ်ဘူး
+    -> အဲ့တာကြောင့် branch တွေခွဲရေးတာ
